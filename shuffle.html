@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script type="text/javascript" src="shuffler.js" ></script>
+
+    <title>The Lunch Shuffle</title>
+</head>
+<body>
+<h2>Welcome to the The Lunch Shuffle!</h2>
+<p>This tool will shuffle a list of people into groups. The shuffler will try to match up people with little in common who haven't been matched up before.</p>
+
+<ol>
+    <li><b>Upload a file</b><br><input type='file' accept='text/plain' onchange='openFile(event)'><br>
+        <ul>
+            <li>This file should be text, tab-delimited.</li>
+            <li>First row is the header.</li>
+            <li>First 3 columns are First, Last, and Email.</li>
+            <li>Columns beyond 3 are optional parameters for assigning mismatch points. The mismatch value goes in parentheses after the parameter name.</li>
+            <li><a href="SampleData.txt">A sample data file</a> might provide some clues. In the sample data, people from the same Department get 5 mismatch points, people from the same Group get 10, and people with the same Manager get 20. If two people score high mismatch values versus each other, they'll tend to not be matched up.</li>
+        </ul>
+    <li><b>Determine the group size</b><br>
+        People per group: <input type='text' id="peoplePerGroup" value="4" size="3"><br>
+        <b>OR:</b><br>
+        Number of groups: <input type='text' id='numberOfGroups' size="3">
+    </li>
+    <li>
+        <input type="button" onclick='startShuffle()' value="Shuffle!">
+    </li>
+    <li><b>Data:</b>
+        <div id='stats'>
+            (no data yet)
+        </div>
+    </li>
+    <li><b>Shuffle results:</b>
+        <div id='output'>
+            (no results yet)
+        </div>
+
+    </li>
+    <li><b>Download the file for next time: </b><br>
+        <input type="button" id="downloadFileButton" onclick='startDownload()' value="Download Starting File for Next Shuffle"><br>
+        This file contains data from the file uploaded in step 1, along with group matchups from the above shuffle. Use it as input next time, and people will tend to not be re-matched.
+    </li>
+</ol>
+
+Errors? Strangeness? Bugs? <a href="https://github.com/ronzilla/the-lunch-shuffle">Find this project on github</a>!.
+</body>
+</html>

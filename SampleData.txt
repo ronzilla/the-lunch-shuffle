@@ -1,0 +1,19 @@
+First	Last	Email	Department (5)	Group (10)	Manager (20)
+Amy	Apple	Amy Apple <example@example.com>	Dev	A	Amy
+Bill	Banana	Bill Banana <example@example.com>	Dev	A	Amy
+Carol	Cherry	Carol Cherry <example@example.com>	Dev	A	Art
+Dill	Donut	Dill Donut <example@example.com>	Dev	A	Art
+Emily	Example	Emily Example <example@example.com>	Dev	B	Bill
+Frank	Fruit	Frank Fruit <example@example.com>	Dev	B	Bill
+Georgie	Grapefruit	Georgie Grapefruit <example@example.com>	Dev	B	Bill
+Hank	Halibut	Hank Halibut <example@example.com>	Mktg	C	Catherine
+Iris	Indigo	Iris Indigo <example@example.com>	Mktg	C	Catherine
+Jake	Jacobi	Jake Jacobi <example@example.com>	Mktg	C	Catherine
+Kris	Kringle	Kris Kringle <example@example.com>	Mktg	D	Dee
+Laurie	Lorenson	Laurie Lorenson <example@example.com>	Mktg	D	Dee
+Mike	Michelson	Mike Michelson <example@example.com>	Mktg	D	Dart
+Neddie	Nerf	Neddie Nerf <example@example.com>	Sales	E	Elle
+Olive	Octopus	Olive Octopus <example@example.com>	Sales	E	Elle
+Pat	Peters	Pat Peters <example@example.com>	Sales	E	Elle
+Q	Quarf	Q Quarf <example@example.com>	Sales	F	Frank
+Rafe	Reed	Rafe Reed <example@example.com>	Sales	F	Fozzie
